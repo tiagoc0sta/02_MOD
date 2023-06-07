@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230606 18:15:52.229" rpa="true" schemaversion="3">
+<suite id="s1" name="Base" source="c:\Users\chris\source\repos\Portfolio\ROBOT\02_MOD\tests\base.robot">
+<test id="s1-t1" name="Automate The Modflow - Validate whether the user is possible to save a project" line="19">
+<kw name="Open The Modflow">
+<kw name="Windows Run" library="RPA.Windows">
+<arg>vmodflex.exe</arg>
+<tag>window</tag>
+<doc>Use Windows Run window to launch an application.</doc>
+<msg timestamp="20230606 18:15:52.829" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230606 18:15:53.403" level="INFO">Sending keys 'vmodflex.exe' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230606 18:15:54.090" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20230606 18:15:52.828" endtime="20230606 18:15:57.624"/>
+</kw>
+<status status="PASS" starttime="20230606 18:15:52.827" endtime="20230606 18:15:57.627"/>
+</kw>
+<status status="PASS" starttime="20230606 18:15:52.826" endtime="20230606 18:15:57.630"/>
+</test>
+<status status="PASS" starttime="20230606 18:15:52.238" endtime="20230606 18:15:57.636"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Base">Base</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
