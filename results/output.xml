@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230608 15:45:12.699" rpa="true" schemaversion="3">
+<suite id="s1" name="02 MOD" source="C:\Users\chris\source\repos\Portfolio\ROBOT\02_MOD">
+<suite id="s1-s1" name="Tests" source="C:\Users\chris\source\repos\Portfolio\ROBOT\02_MOD\tests">
+<suite id="s1-s1-s1" name="Spotfy" source="C:\Users\chris\source\repos\Portfolio\ROBOT\02_MOD\tests\spotfy.robot">
+<test id="s1-s1-s1-t1" name="Open Spotify desktop application and play a song" line="12">
+<kw name="Open the Spotify desktop application">
+<kw name="Windows Search" library="RPA.Windows">
+<arg>Spotify</arg>
+<tag>window</tag>
+<doc>Use Windows search window to launch application.</doc>
+<msg timestamp="20230608 15:45:13.026" level="INFO">Sending keys '{Win}s' to element: &lt;module 'uiautomation' from 'C:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230608 15:45:13.607" level="INFO">Sending keys 'Spotify' to element: &lt;module 'uiautomation' from 'C:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230608 15:45:14.243" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'C:\\ProgramData\\robocorp\\ht\\98c3928_b1f3c24_1c0bc041\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20230608 15:45:13.025" endtime="20230608 15:45:17.789"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230608 15:45:20.804" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230608 15:45:17.789" endtime="20230608 15:45:20.805"/>
+</kw>
+<status status="PASS" starttime="20230608 15:45:13.024" endtime="20230608 15:45:20.805"/>
+</kw>
+<kw name="Search for the song">
+<kw name="Click" library="RPA.Windows">
+<arg>name:Buscar</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20230608 15:45:20.810" level="INFO">Getting element with locator: name:Buscar</msg>
+<msg timestamp="20230608 15:45:21.091" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000017EDCDF88B0&gt;, locator=None, name='Área de Trabalho 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
+<msg timestamp="20230608 15:45:21.092" level="INFO">Locator 'name:Buscar' produced matcher: MatchObject(locators=[('Name', 'Buscar', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20230608 15:45:32.721" level="INFO">2023-06-08 15:45:32.720 locators.py[274] _get_control_from_params -&gt; Find Control Timeout(10s): {Name: 'Buscar'}</msg>
+<msg timestamp="20230608 15:45:32.722" level="FAIL">ElementNotFound: Element not found with locator 'name:Buscar'</msg>
+<status status="FAIL" starttime="20230608 15:45:20.808" endtime="20230608 15:45:32.735"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>keys=${SONG_NAME}</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<status status="NOT RUN" starttime="20230608 15:45:32.737" endtime="20230608 15:45:32.737"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230608 15:45:32.739" endtime="20230608 15:45:32.741"/>
+</kw>
+<status status="FAIL" starttime="20230608 15:45:20.807" endtime="20230608 15:45:32.744"/>
+</kw>
+<kw name="Select the song">
+<status status="NOT RUN" starttime="20230608 15:45:32.747" endtime="20230608 15:45:32.747"/>
+</kw>
+<kw name="Play the song">
+<status status="NOT RUN" starttime="20230608 15:45:32.747" endtime="20230608 15:45:32.748"/>
+</kw>
+<status status="FAIL" starttime="20230608 15:45:13.022" endtime="20230608 15:45:32.750">ElementNotFound: Element not found with locator 'name:Buscar'</status>
+</test>
+<doc>Spotify Windows desktop application robot. Opens the Spotify
+desktop application, searches for the given song, and plays
+the song. Demonstrates the basic Windows automation
+capabilities of the RPA Framework.</doc>
+<status status="FAIL" starttime="20230608 15:45:12.763" endtime="20230608 15:45:32.754"/>
+</suite>
+<status status="FAIL" starttime="20230608 15:45:12.758" endtime="20230608 15:45:32.766"/>
+</suite>
+<status status="FAIL" starttime="20230608 15:45:12.710" endtime="20230608 15:45:32.773"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="02 MOD">02 MOD</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">02 MOD.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Spotfy">02 MOD.Tests.Spotfy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
