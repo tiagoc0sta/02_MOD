@@ -22,7 +22,7 @@ Open the Spotify desktop application
 
 Search for the song
     Send Keys    keys={CTRL}l
-    #Click    name:Buscar
+    ###Click    name:Buscar
     Send Keys    keys=${SONG_NAME}
     Sleep    3s
 
